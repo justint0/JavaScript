@@ -1,0 +1,7 @@
+Which data structure should I use?
+
+- If you need a list, use an array or set. If you need key-value pairs, use an object or map.
+
+- Use arrays when you need an ordered list, when working with duplicate data, and when manipulating data. Use sets when working with unique values, when high performance is necessary, and when you need to remove duplicates. 
+
+- Use objects when you need to add functions and when working with JSON. Use maps when you need keys that are not strings and when you need better performance.

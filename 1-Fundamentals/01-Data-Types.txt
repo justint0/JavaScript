@@ -1,0 +1,25 @@
+JavaScript has 7 primitive data types.
+
+- Numbers (JS does not define different types of numbers)
+  - Example: 10, 4.0
+
+- Strings
+  - Example: 'Justin', "Hello World"
+
+- Booleans
+  - Example: true, false
+
+- Undefined means a variable is not defined
+  - Example: let a >>> console.log(a) // This will return undefined.
+
+- Null means no value
+  - typeof null >>> object
+
+- Symbols are immutable (cannot be changed) and are unique.
+
+- BigInt values represent numeric values which are too large to be represented by the number primitive.
+
+
+- JavaScript has dynamic typing - variables can be reassigned to different data types.
+- The typeof operator shows us the data type of a variable.
+  - Example: console.log(typeof 23)

@@ -1,0 +1,53 @@
+Debugging
+  - How the debugging process works and what tools are at your disposal (Chrome DevTools)
+
+Fundamentals
+  - Data types, functions, arrays, objects, and loops
+  - Use Google Chrome during development and use Babel to transpile/polyfill code during production
+
+JavaScript in the Browser: DOM and Events Fundamentals
+  - The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+  - Elements can be selected using document.querySelector, document.querySelectorAll, document.getElementById, document.getElementByTagName, or document.getElementByClassName.
+  - addEventListener() allows you to set up functions to be called when a specific event happens, such as when a user clicks a button. Multiple event listeners can be added for the same event. Event listeners can also be removed.
+  - classList returns a live collection of CSS classes. Classes can be added, removed, or toggled.
+
+Data Structures, Modern Operators, Strings
+  - Array and object destructuring, spread and rest operator, logical operators, and looping arrays and objects
+  - Set and map data structures
+  - Strings
+
+Advanced Functions
+  - Default parameters, pass-by-value, first class functions, IIFEs, and closures
+  - Call, apply, and bind methods
+
+Advanced Arrays
+  - forEach, map, filter, reduce, etc.
+
+Numbers, Dates, Intl and Timers
+  - Number(), remainder operator, Math(), numeric separators, BigInt
+  - Date(), Intl.DateTimeFormat() to internationalize dates, Intl.NumberFormat() to internationalize numbers
+  - setTimeout() and clearTimeout(), setInterval() and clearInterval()
+
+Advanced DOM and Events
+  - We can use the DOM API to creating and insert elements, delete elements, and change styles, attributes, and classes. 
+  - Event propagation: https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/
+  - Event delegation: https://www.freecodecamp.org/news/event-delegation-javascript/
+  - DOM traversing is selecting an element from another element
+  - Smooth scrolling, page navigation, tabbed component, sticky navigation, revealing elements on scroll, lazy loading, slider component, etc.
+
+Object Oriented Programming
+  - 4 principles of OOP
+  - 3 ways to implement prototypal inheritance: constructor functions, ES6 classes, and Object.create()
+
+Asynchronous JavaScript
+  - How to build and consume promises, fetch(), .then(), .catch(), .finally(), async/await with try...catch(), and promise combinators
+
+Modern JavaScript Development
+  - ES6 modules, importing and exporting, top-level await
+  - Functional programming
+
+Parcel App
+  - We build a web app with Parcel
+
+
+

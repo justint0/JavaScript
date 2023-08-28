@@ -1,0 +1,69 @@
+Resource: https://www.freecodecamp.org/news/functional-programming-in-javascript/
+
+
+Declarative vs Imperative Programming Paradigms
+  - Declarative: write code that specifies what you want to do, without saying how
+  - Imperative: write code that tells how to do something
+  - Functional programming in a sub-paradigm of the declarative programming paradigm
+
+
+What are the rules that lead to functional code?
+  - 1. You architect your software out of pure, isolated functions
+  - 2. You avoid mutability and side-effects
+
+
+1. Architect your software out of pure, isolated functions
+
+Pure functions
+  - The same input always gives the same output (idempotence), and has no side effects.
+  
+  - An idempotent function, is one that, when you reapply the results to that function again, doesn't produce a difference result. 
+
+  - Side effects are when your code interacts with (reads or writes to) external mutable state.
+  External mutable state is literally anything outside the function that would change the data in your program. Set a function? Set a Boolean on an object? Delete properties on an object? All changes to state outside your function. 
+
+Isolated functions
+  - There is no dependence on the state of the program, which includes global variables that are subject to change. Anything that you need should be passed into the function as an argument.
+
+Reusability through higher order functions
+  - In JavaScript, all functions are first class functions. Functions that have a first class status allow us to create higher order functions. A higher order function is a function that either takes a function as an argument, returns a function, or both! The built-in JavaScript Array functions .map, .reduce, and .filter are excellent examples of higher order functions.
+
+
+2. Avoid mutability and side-effects
+
+Don't change things! Once you've made it, it is immutable (unchanging over time). If something has to change for your data structures, make changes to a copy.
+
+The `freeze` function enforces immutability. 
+
+If we can't change the state of global variables, then we need to ensure:
+  - We declare function arguments - any computation inside a function depends only on the arguments and not on any global object or variable.
+  - We don't alter a variable or object - create new variables and objects and return them if need be from a function.
+
+Make your code referentially transparent
+  - Your function calls can be replaced with the values that they represent without affecting the result.
+
+
+More Features of Functional Programming
+
+Recursion in Functional Programming
+  - Recursion is one tool you can use to iterate in functional programming.
+  - Recursion allows us to stop mutating state variables, for one. There are also certain data structures (tree structures) that are more efficient when solved with recursion. They generally require less code, so some coders like the readability of recursion. 
+
+Currying in Functional Programming
+  - The arity of a function refers to how many arguments it receives. 
+  - Currying a function turns a function that has an arity of more than 1, to 1. It does this by returning an inner function to take the next argument. 
+  - The big benefit of currying is when you need to re-use the same function multiple times but only change one (or fewer) of the parameters.
+  - Currying can also make your code easier to refactor. You don't have to change multiple places where you are passing in the wrong function arguments - just the one place, where you bound the first function call to the wrong argument.
+
+Partial application in Functional Programming
+  - Partial application means that you apply a few arguments to a function at a time and return another function that is applied to more arguments.
+  - bind is the best example of a partial application
+  - You can use partial application whenever you can't pass all your arguments at once, but can return functions from higher order functions to deal with the rest of the arguments.
+
+Function composition in Functional Programming
+  - Function composition allows us to take two or more functions and turn them into one function that does exactly what the two functions (or more) do.
+  - You can take this further and create functions to compose any number of multiple arity functions together if you need that for your use case.
+  - Composition allows you to structure your code out of re-usable functions, to stop repeating yourself. You can start to treat functions like small building blocks you can combine together to achieve a more complicated output. 
+
+Conclusion
+  - Functional code isn't necessarily the best, and neither is object orientated code. Functional code is generally used for more math-based problems like data analysis. It's also very useful for high-availability real-time systems, like stuff written in Erlang (a functional language). But it genuinely does depend problem to problem.

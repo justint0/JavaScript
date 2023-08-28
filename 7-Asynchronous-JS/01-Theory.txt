@@ -1,0 +1,13 @@
+Asynchronous JavaScript, AJAX, and APIs
+  - Synchronous: Code is executed line by line (blocking).
+  - Asynchronous: Executed in the background (non-blocking).
+
+  - With AJAX calls, we can request data from web servers dynamically.
+
+  - APIs allow applications to talk to each other. We can build an API or use a third-party API.
+
+How the Web Works: Requests and Responses
+  1.) DNS Lookup
+  2.) TCP/IP socket connection is established between browser and server
+  3.) Client makes an HTTP request with start line (HTTP method, request target, HTTP version), request headers, and request body (only when sending data to server).
+  4.) Server sends an HTTP response with start line (HTTP version, status code, status message), response headers, and response body (JSON data or HTML).

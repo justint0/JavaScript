@@ -1,0 +1,19 @@
+Software bug: Defect or problem in a computer program. Any unexpected or unintended behavior of a computer program is a software bug.
+
+Debugging: Process of finding, fixing, and preventing bugs.
+
+The Debugging Process
+  - Identify (becoming aware that there is a bug)
+    - During development
+    - Testing software
+    - User reports during production
+  
+  - Find (isolating where exactly the bug is happening in code)
+    - Use the developer console or the debugger
+  
+  - Fix (correct the bug)
+    - Replace the wrong solution with a correct solution
+  
+  - Prevent
+    - Search for the bug elsewhere
+    - Write tests to detect bugs

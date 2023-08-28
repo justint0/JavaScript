@@ -1,0 +1,32 @@
+Introduction to npm (node package manager)
+
+  - "npm init" initializes a project
+  - "npm install leaftlet" or "npm i leaflet" installs the leaflet module
+  - "npm i" installs all dependencies in package.json
+
+
+Building a web app with Parcel
+Source: https://parceljs.org/getting-started/webapp/
+
+1. Install Parcel into your app using npm
+npm install --save-dev parcel
+
+
+2. Create src/index.html file. Parcel accepts any type of file as an entry point, but an HTML file is a good place to start. Parcel will follow all of your dependencies from there to build your app.
+
+
+3. Parcel has a development server built in, which will automatically rebuild your app as you make changes. To start it, run the parcel CLI pointing to your entry file:
+npx parcel src/index.html
+
+Now open http://localhost:1234/ in your browser to see the HTML file you created above.
+
+
+4. Add dependencies to HTML file, such as a JavaScript or CSS file. As you make changes, you should see your app automatically update in the browser without even refreshing the page!
+
+
+5. So far, we've been running the parcel CLI directly, but it can be useful to create some scripts in your package.json file to make this easier. We'll also setup a script to build your app for production using the parcel build command. Finally, you can also declare your entries in a single place using the source field so you don't need to duplicate them in each parcel command.
+
+Now you can run npm build to build your project for production and npm start to start the development server. 
+
+
+6. By default Parcel does not perform any code transpilation. This means that if you write your code using modern language features, that's what Parcel will output. You can declare your app's supported browsers using the browserslist field. When this field is declared, Parcel will transpile your code accordingly to ensure compatibility with your supported browsers.

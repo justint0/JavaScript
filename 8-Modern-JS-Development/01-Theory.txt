@@ -1,0 +1,36 @@
+An Overview of Modern JavaScript Development
+
+  - Development: applications consist of modules and 3rd party packages from npm
+
+  - Build process: Bundling joins all modules into one file and transpiling/polyfilling converts modern JavaScript back to ES5
+
+  - Production: JavaScript bundle
+
+
+--------------------
+
+
+An Overview of Modules in JavaScript
+
+  - A module is a function or group of similar functions. They are grouped together within a file and contain the code to execute a specific task when called into a larger application. You create modules to better organize and structure your codebase.
+
+  - An ES6 module is a JavaScript file that executes in strict mode only. It means that any variables or functions declared in the module won't be added automatically to the global scope. 
+  
+  - ES6 modules can use import and export. 
+
+  - Add type='module' to a script tag.
+
+
+--------------------
+
+
+Top-level Await
+
+  - You can use await at the top-level of a module. Your module won't finish loading until the promise you await settles.
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+When to use an array method
+
+- Mutate array
+  - push
+  - unshift
+  - pop
+  - shift
+  - splice
+  - reverse
+  - sort
+  - fill
+
+- Create new array
+  - map
+  - filter
+  - slice
+  - concat
+  - flat and flatMap
+
+- Get an array index
+  - indexOf
+  - findIndex
+
+- Get an array element
+  - find
+
+- Know if array includes
+  - includes
+  - some
+  - every
+
+- Create new string
+  - join
+
+- Transform array to value
+  - reduce
+
+- Loop array
+  - forEach
+
+    

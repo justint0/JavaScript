@@ -1,0 +1,31 @@
+What is OOP?
+
+  - OOP is a programming paradigm based on the concept of objects. Objects model real-world or abstract features and may contain data (properties) and code (methods).
+
+  - Objects are the building blocks of applications and interact with one another through a public interface (API).
+
+  - In JavaScript, objects are linked to a prototype object and can access its methods. This is prototypal inheritance.
+
+
+--------------------
+
+
+The 4 Fundamental OOP Principles
+
+  - Abstraction: Hiding details that don't matter from the end user. 
+  - Encapsulation: Control access to data and functions. 
+  - Inheritance: Child classes retain data and functions from parent classes. 
+  - Polymorphism: Child classes can overwrite methods inherited from parent classes.
+
+
+--------------------
+
+
+3 Ways of Implementing Prototypal Inheritance in JavaScript
+
+  - Constructor function is a function that acts as a blueprint for creating objects.
+  - ES6 classes is a modern alternative to constructor functions
+  - Object.create() creates a new object, using an existing object as the prototype of the newly created object.
+
+
+
